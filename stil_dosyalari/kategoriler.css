@@ -224,6 +224,11 @@ cursor: pointer;
 font-family: 'Times New Roman', Times, serif;
 }
 
+.kategori-listesi button:hover {
+background-color: #7a3a3a;
+transition: 0.2s;
+}
+
 .kategori-listesi button.aktif {
 border: 2px solid white;
 }
@@ -242,8 +247,50 @@ display: block;
 
 .kitap-kutu {
 padding: 12px;
-background: #eee;
+background: #f7f3e9;
 margin-bottom: 10px;
 border-radius: 6px;
 font-family: 'Times New Roman', Times, serif;
+}
+
+.kitap-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 25px;
+margin-top: 20px;
+}
+
+.kitap-kart {
+background-color: #f9f4e7;
+border-radius: 10px;
+padding: 12px;
+text-align: center;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.kitap-kart img {
+width: 100%;
+height: 260px;
+object-fit: cover;
+display: block;
+margin: 0 auto;
+object-position: top;
+}
+
+.kitap-kart h3 {
+font-size: 16px;
+margin: 10px 0 5px;
+font-family: 'Times New Roman', Times, serif;
+}
+
+.kitap-kart p {
+font-size: 14px;
+color: #666;
+font-family: 'Times New Roman', Times, serif;
+}
+
+.kitap-kart:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
