@@ -1,0 +1,249 @@
+html,body{
+height: 100%;
+margin: 0;
+}
+
+body {
+display: flex;
+flex-direction: column;
+}
+
+main {
+flex: 1;
+}
+
+.navbar {
+width: 100%;
+background-color: #590e0e;
+color: white;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 40px; 
+box-sizing: border-box;
+}
+
+.navbar-logo {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.navbar-logo img {
+width: 180px;
+height: auto;
+}
+
+.navbar-logo span {
+font-size: 20px;
+font-weight: bold;
+font-family: "Times New Roman", serif;
+margin-top: 50px;
+margin-left: -50px;
+}
+
+.navbar-links {
+display: flex;
+align-items: center;
+gap: 40px; 
+margin-top: 50px;
+}
+
+.nav-left {
+display: flex;
+gap: 25px; 
+}
+
+.nav-right {
+display: flex;
+gap: 20px;
+}
+
+.nav-right a {
+padding: 8px 16px;
+border: 1px solid #d02310;
+border-radius: 6px;
+background-color: #d02310;
+font-size: 16px;
+text-decoration: none;
+transition: 0.3s;
+}
+
+.nav-right a:hover {
+background-color: #d02310;
+color: white;
+border-color: white;
+}
+
+.nav-left a,
+.nav-right a {
+color: white;
+text-decoration: none;
+font-size: 16px;
+font-family: "Times New Roman", serif;
+transition: 0.3s;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+color: #e5d5d6;
+}
+
+.nav-left a{
+position: relative;
+color: white;
+text-decoration: none;
+padding-bottom: 6px;
+}
+
+.nav-left a::after {
+content: "";
+position: absolute;
+left: 0;
+bottom: 0;
+width: 0;
+height: 1px;
+background-color: white;
+transition: width 0.3s ease;
+}
+
+.nav-left a:hover::after {
+width: 100%;
+}
+
+footer {
+display: flex;
+background-color: #590e0e;
+color: white;
+padding: 40px 60px 25px;
+justify-content: space-between;
+align-items: flex-start;
+flex-wrap: wrap;
+}
+
+.footer-left {
+display: flex;
+align-items: center;
+gap: 15px;
+}
+
+.footer-left img {
+width: 180px;
+height: auto;
+margin-left: -50px;
+}
+
+.footer-text {
+display: flex;
+flex-direction: column;
+line-height: 1.3;
+margin-left: -50px;
+margin-top: 40px;
+}
+
+.footer-text span {
+font-family: 'Times New Roman', Times, serif;
+font-size: 20px;
+font-weight: bold;
+}
+
+.footer-text p {
+font-family: 'Times New Roman', Times, serif;
+font-size: 11px;
+margin: 0;
+opacity: 0.8;
+}
+
+.footer-right {
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+gap: 6px;
+margin-top: 30px;
+}
+
+.footer-right a {
+color: white;
+text-decoration: none;
+font-size: 15px;
+font-family: 'Times New Roman', Times, serif;
+position: relative;
+}
+
+.footer-right a::after {
+content: "";
+position: absolute;
+left: 0;
+bottom: -2px;
+width: 0;
+height: 1px;
+background-color: #ffffff;
+transition: width 0.3s ease;
+}
+
+.footer-right a:hover::after {
+width: 100%;
+}
+
+.footer-copy {
+width: 100%;
+text-align: center;
+margin-top: 25px;
+padding-top: 10px;
+font-size: 13px;
+opacity: 0.7;
+border-top: 1px solid rgba(255,255,255,0.4);
+}
+
+
+
+
+
+
+.kategori-sayfası {
+display: flex;
+gap: 40px;
+padding: 40px;
+}
+
+.kategori-listesi {
+width: 220px;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.kategori-listesi button {
+background-color: #6d0000;
+color: white;
+border: none;
+padding: 12px 20px;
+border-radius: 8px;
+font-size: 16px;
+cursor: pointer;
+font-family: 'Times New Roman', Times, serif;
+}
+
+.kategori-listesi button.aktif {
+border: 2px solid white;
+}
+
+.kategori-icerik {
+flex: 1;
+}
+
+.kategori-kutu {
+display: none;
+}
+
+.kategori-kutu.active {
+display: block;
+}
+
+.kitap-kutu {
+padding: 12px;
+background: #eee;
+margin-bottom: 10px;
+border-radius: 6px;
+font-family: 'Times New Roman', Times, serif;
+}

@@ -1,11 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kategoriler</title>
+  <link rel="stylesheet" href="../stil_dosyalari/kategoriler.css">
 </head>
 <body>
-    
+<header class="navbar">
+    <div class="navbar-logo">
+        <img src="../img/logo.png" alt="logo">
+        <span>Yuva Kitabevi</span>
+    </div>
+    <div class="navbar-links">
+        <nav class="nav-left">
+            <a href="index.html">Ana Sayfa</a>
+            <a href="kategoriler.html">Kategoriler</a>
+            <a href="sepetim.html">Sepetim</a>
+            <a href="favoriler.html">Favoriler</a>
+            <a href="iletisim.html">İletişim</a>
+        </nav>
+        <nav class="nav-right">
+            <a href="giris.html">Giriş/Kayıt Ol</a>
+        </nav>
+    </div>
+</header>    
+
+<main class="kategori-sayfası">
+   <aside class="kategori-listesi">
+      <button data-target="turk">Türk Edebiyatı</button>
+      <button data-target="ingiliz">İngiliz Edebiyatı</button>
+      <button data-target="japon">Japon Edebiyatı</button>
+      <button data-target="cocuk">Çocuk Edebiyatı</button>
+      <button data-target="bilim">Bilim</button>
+      <button data-target="tarih-siyaset">Tarih-Siyaset</button>
+      <button data-target="felsefe-düşünce">Felsefe-Düşünce</button>
+   </aside>
+
+   <section class="kategori-icerik">
+      <div class="kategori-kutu active" id="turk">
+         <h2>Türk Edebiyatı</h2>
+         <div class="kitap-kutu">Kitap</div>
+      </div> 
+
+      <div class="kategori-kutu active" id="ingiliz">
+         <h2>İngiliz Edebiyatı</h2>
+         <div class="kitap-kutu">Kitap</div>
+      </div> 
+
+      <div class="kategori-kutu active" id="japon">
+         <h2>Japon Edebiyatı</h2>
+         <div class="kitap-kutu">Kitap</div>
+      </div> 
+
+      <div class="kategori-kutu active" id="cocuk">
+         <h2>Çocuk Edebiyatı</h2>
+         <div class="kitap-kutu">Kitap</div>
+      </div> 
+
+      <div class="kategori-kutu active" id="bilim">
+         <h2>Bilim</h2>
+         <div class="kitap-kutu">Kitap</div>
+      </div> 
+
+      <div class="kategori-kutu active" id="tarih-siyaset">
+         <h2>Tarih-Siyaset</h2>
+         <div class="kitap-kutu">Kitap</div>
+      </div> 
+
+      <div class="kategori-kutu active" id="felsefe-düşünce">
+         <h2>Felsefe-Düşünce</h2>
+         <div class="kitap-kutu">Kitap</div>
+      </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+
+<footer>
+   <div class="footer-left">
+      <img src="../img/logo.png" alt="logo">
+      <div class="footer-text">
+         <span>Yuva Kitabevi</span>
+         <p>@yuvakitabevi</p>
+      </div>
+   </div>  
+   <div class="footer-right">
+      <a href="index.html">Ana Sayfa</a>
+      <a href="kategoriler.html">Kategoriler</a>
+      <a href="sepetim.html">Sepetim</a>
+      <a href="favoriler.html">Favoriler</a>
+      <a href="iletisim.html">İletişim</a>
+   </div>
+   <p class="footer-copy"> &copy; 2026 Yuva Kitabevi- Tüm Hakları Saklıdır.</p>
+</footer>
+
 </body>
 </html>
