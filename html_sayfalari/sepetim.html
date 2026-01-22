@@ -22,7 +22,7 @@
             <a href="iletisim.html">İletişim</a>
         </nav>
         <nav class="nav-right">
-            <a href="giris.html">Giriş/Kayıt Ol</a>
+            <a id="hesapButon" class="hesap-link">Giriş / Kayıt Ol</a>
         </nav>
     </div>
 </header>
@@ -44,6 +44,46 @@
         <button class="devam-btn">Devam Et</button>
     </div>
 
+
+
+
+
+
+
+<div id="girisModal" class="modal">
+     <div class="modal-icerik">
+          <span class="kapat">&times;</span>
+
+          <div class="giris-panel">
+               <h2>Giriş Yap</h2>
+               <label>Kullanıcı Adı</label>
+               <input type="text" id="girisKullanici">
+
+               <label>Şifre</label>
+               <input type="password" id="girisSifre">
+
+               <button onclick="girisYap()">Giriş Yap</button>
+               <p class="degis">Hesabın Yok Mu?
+                <span onclick="panelDegistir()">Kayıt Ol</span>
+               </p>
+          </div>
+
+
+          <div class="kayit-panel kapali">
+               <h2>Kayıt Ol</h2>
+               <label>Kullanıcı Adı</label>
+               <input type="text" id="kayitKullanici">
+
+               <label>Şifre</label>
+               <input type="password" id="kayitsifre">
+               <button onclick="kayitOl()">Kayıt Ol</button>
+
+               <p class="degis">Hesabın var mı?
+                  <span onclick="panelDegistir()">Giriş Yap</span>
+               </p>
+          </div>
+     </div>
+</div>
 <footer>
    <div class="footer-left">
       <img src="../img/logo.png" alt="logo">
@@ -63,5 +103,6 @@
 </footer>
 
 <script src="../js-kodlari/sepetim.js"></script>
+<script src="../js-kodlari/giris.js/nav.js"></script>
 </body>
 </html>
