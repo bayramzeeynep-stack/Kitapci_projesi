@@ -75,7 +75,8 @@ sepeteEkleBtn.addEventListener("click", function () {
         baslik: modalBaslik.textContent,
         yazar: modalYazar.textContent,
         fiyat: modalFiyat.textContent,
-        kapak: modalKapak.src
+        kapak: modalKapak.src,
+        adet: 1
     };
 
     let sepet = JSON.parse(localStorage.getItem("sepet")) || [];
@@ -131,3 +132,21 @@ function modalFavoriKontrol(baslik) {
         modalKalp.textContent = "🤍";
     }
 }
+
+console.log("Sepete eklenen ürün:", kitap);
+console.log("Güncel Sepet:", sepet);
+
+const kitap = {
+    baslik: modalBaslik.textContent,
+    yazar: modalYazar.textContent,
+    fiyat: modalFiyat.textContent,
+    kapak: modalKapak.src,
+    adet: 1
+};
+
+console.log("Sepete eklenen ürün:", kitap);   // ← EKLE
+
+sepet.push(kitap);
+localStorage.setItem("sepet", JSON.stringify(sepet));
+
+console.log("Güncel sepet:", sepet);  // ← EKLE
