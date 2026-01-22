@@ -21,7 +21,7 @@ function favorileriYukle() {
                 <div class="favori-bilgi">
                     <h4>${urun.baslik}</h4>
                     <p>${urun.yazar}</p>
-                    <p>${urun.fiyat} TL</p>
+                    <p>${urun.fiyat} </p>
                 </div>
 
                 <button class="favori-sil-btn" onclick="favoriSil(${index})">Sil</button>
