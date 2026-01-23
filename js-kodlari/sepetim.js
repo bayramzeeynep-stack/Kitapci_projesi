@@ -34,9 +34,9 @@ function sepetiYazdir() {
                 </div>
 
                 <div class="adet-kutu">
-                    <button class="adet-btn" onclick="adetAzalt(${i})">-</button>
+                    <button class="adet-btn" onclick="adetAzalt(${i})"> - </button>
                     <span>${urun.adet}</span>
-                    <button class="adet-btn" onclick="adetArtir(${i})">+</button>
+                    <button class="adet-btn" onclick="adetArtir(${i})"> + </button>
                 </div>
 
                 <button class="sil-btn" onclick="urunuSil(${i})">Sil</button>

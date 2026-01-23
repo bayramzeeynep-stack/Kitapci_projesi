@@ -281,18 +281,24 @@ border-top: 1px solid rgba(255,255,255,0.4);
 }
 
 .adet-btn {
-    border: 1px solid #aaa;
-    background: white;
-    padding: 5px 10px;
+    border: 1px solid #f7f0f0;
+    background: #590e0e;
+    padding: 6px 10px;
     cursor: pointer;
     border-radius: 6px;
+}
+
+.adet-btn:hover {
+    background-color: #590e0e;
+    color: #590e0e;
 }
 
 /* SİL BTN */
 .sil-btn {
     background: none;
-    border: 1px solid crimson;
-    color: crimson;
+    border: 1px solid #590e0e;
+    color: rgb(247, 246, 246);
+    background-color: #590e0e;
     padding: 8px 12px;
     border-radius: 8px;
     cursor: pointer;

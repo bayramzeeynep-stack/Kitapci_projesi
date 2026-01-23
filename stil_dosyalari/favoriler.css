@@ -263,7 +263,8 @@ border-top: 1px solid rgba(255,255,255,0.4);
     padding: 8px 12px;
     background: none;
     border: 1px solid #590e0e;
-    color: #590e0e;
+    color: #ffffff;
+    background-color: #590e0e;
     border-radius: 8px;
     cursor: pointer;
     font-family: "Times New Roman", serif;
@@ -271,7 +272,6 @@ border-top: 1px solid rgba(255,255,255,0.4);
 
 .favori-sil-btn:hover {
     background: #590e0e;
-    color: white;
 }
 
 
