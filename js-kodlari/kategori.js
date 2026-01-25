@@ -1,30 +1,24 @@
-// =========================
-// 1) KATEGORİ BUTONLARI
-// =========================
+
 const butonlar = document.querySelectorAll(".kategori-btn");
 const kutular = document.querySelectorAll(".kategori-kutu");
 
 butonlar.forEach(btn => {
     btn.addEventListener("click", () => {
 
-        // Aktif butonu değiştir
         butonlar.forEach(b => b.classList.remove("aktif"));
         btn.classList.add("aktif");
 
-        // Butondaki kategoriyi al
         let kategori = btn.getAttribute("data-kategori");
 
-        // Tüm kutuları gizle
+
         kutular.forEach(k => k.style.display = "none");
 
-        // Sadece seçilen kategoriyi göster
+
         document.getElementById(kategori).style.display = "block";
     });
 });
 
-// ==========================
-// 1) MODAL ELEMANLARI
-// ==========================
+
 const modal = document.getElementById("kitapModal");
 const modalKapak = document.getElementById("modalKapak");
 const modalBaslik = document.getElementById("modalBaslik");
@@ -32,12 +26,10 @@ const modalYazar = document.getElementById("modalYazar");
 const modalFiyat = document.getElementById("modalFiyat");
 const modalAciklama = document.getElementById("modalAciklama");
 const modalClose = document.querySelector(".modal-close");
-const modalKalp = document.getElementById("modalKalp");  // FAVORİ KALBİ
+const modalKalp = document.getElementById("modalKalp");  
 const sepeteEkleBtn = document.getElementById("sepeteEkleBtn");
 
-// ==========================
-// 2) MODAL AÇMA — Kart tıklanınca
-// ==========================
+
 const kitapKartlari = document.querySelectorAll(".kitap-kart");
 
 kitapKartlari.forEach(kart => {
@@ -55,9 +47,7 @@ kitapKartlari.forEach(kart => {
     });
 });
 
-// ==========================
-// 3) MODAL KAPATMA
-// ==========================
+
 modalClose.addEventListener("click", () => {
     modal.style.display = "none";
 });
@@ -66,9 +56,7 @@ window.addEventListener("click", e => {
     if (e.target === modal) modal.style.display = "none";
 });
 
-// ==========================
-// 4) SEPETE EKLE
-// ==========================
+
 sepeteEkleBtn.addEventListener("click", function () {
 
     const kitap = {
@@ -86,9 +74,7 @@ sepeteEkleBtn.addEventListener("click", function () {
     alert("Kitap sepete eklendi!");
 });
 
-// ==========================
-// 5) FAVORİ KALP — TIKLAYINCA DÖNÜŞ YAPAN SİSTEM ❤️🤍
-// ==========================
+
 modalKalp.addEventListener("click", function () {
 
     let favoriler = JSON.parse(localStorage.getItem("favoriler")) || [];
@@ -97,12 +83,12 @@ modalKalp.addEventListener("click", function () {
     const varMi = favoriler.some(f => f.baslik === kitap);
 
     if (varMi) {
-        // ❌ FAVORİDEN ÇIKAR
+
         favoriler = favoriler.filter(f => f.baslik !== kitap);
         modalKalp.classList.remove("dolu");
         modalKalp.textContent = "🤍";
     } else {
-        // ❤️ FAVORİYE EKLE
+
         favoriler.push({
             baslik: modalBaslik.textContent,
             yazar: modalYazar.textContent,
@@ -116,9 +102,7 @@ modalKalp.addEventListener("click", function () {
     localStorage.setItem("favoriler", JSON.stringify(favoriler));
 });
 
-// ==========================
-// 6) MODAL AÇILIRKEN KALBİ DOĞRU DURUMA GETİR
-// ==========================
+
 function modalFavoriKontrol(baslik) {
     const favoriler = JSON.parse(localStorage.getItem("favoriler")) || [];
 
@@ -144,9 +128,9 @@ const kitap = {
     adet: 1
 };
 
-console.log("Sepete eklenen ürün:", kitap);   // ← EKLE
+console.log("Sepete eklenen ürün:", kitap);   
 
 sepet.push(kitap);
 localStorage.setItem("sepet", JSON.stringify(sepet));
 
-console.log("Güncel sepet:", sepet);  // ← EKLE
+console.log("Güncel sepet:", sepet);  

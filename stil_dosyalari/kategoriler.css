@@ -523,21 +523,16 @@ width: 100%;
 
 /* MODAL İÇİ */
 .modal-icerik {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: flex-start !important;
-    justify-content: flex-start !important;
-    gap: 20px !important;
-    width: 90% !important;
-    max-width: 850px !important;
     background: white;
+    padding: 30px 40px;
     border-radius: 12px;
-    padding: 20px;
+    width: 340px;
     box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+    position: relative;
     font-family: "Times New Roman", serif;
 }
 
-/* X BUTONU */
+
 .kapat {
     position: absolute;
     right: 18px;
@@ -546,7 +541,7 @@ width: 100%;
     cursor: pointer;
 }
 
-/* PANEL ORTAK */
+
 .giris-panel, .kayit-panel {
     display: flex;
     flex-direction: column;
@@ -586,6 +581,7 @@ button {
 .kapali {
     display: none;
 }
+
 
 @media (max-width: 900px) {
     .navbar {
@@ -693,4 +689,57 @@ display: none;
 .footer-center .slogan {
 display: block;
 }
+}
+
+@media (max-width:1200px) {
+    .kitap-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width:900px) {
+    .kitap-grid {
+        grid-template-columns: 2fr;
+    }
+
+    .kitap-kart {
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width:900px) {
+    .modal-content {
+        width: 95%;
+        max-width: 520px;
+        padding: 18px;
+        gap: 15px;
+        flex-direction: row;
+    }
+
+    .modal-left img {
+        width: 200px;
+    }
+
+    .modal-actions {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .modal-right h2 {
+        font-size: 18px;
+    }
+
+    .modal-right h4 {
+        font-size: 15px;
+    }
+
+    .modal-right p {
+        font-size: 14px;
+    }
 }
