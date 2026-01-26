@@ -436,3 +436,308 @@ display: block;
         display: none;
     }
 }
+
+.hero {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(rgba(148, 20, 20, 0.4), #590e0e),
+                url("../img/anasayfa-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hero-icerik h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.hero-icerik p {
+    font-size: 18px;
+}
+
+.cok-satanlar {
+    padding: 40px 40px;
+}
+
+.cok-satanlar h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000;
+}
+
+.cok-satanlar-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.cok-satan-kart {
+    background: #fff;
+    background-color: #f9f4e7;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    transition: 0.3s ease;
+}
+
+.cok-satan-kart:hover {
+    transform: scale(1.04);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+.cok-satan-kart img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cok-satan-kart h3 {
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #590e0e;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 900px) {
+    .cok-satanlar-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cok-satan-kart img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cok-satanlar-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .cok-satan-kart img {
+        height: 180px;
+    }
+}
+
+
+.ana-kategoriler {
+    padding: 40px 80px;
+}
+
+.kategori-kutu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.kategori-kutu-grid a {
+    background: #7a0d0d;
+    padding: 18px 20px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    transition: 0.25s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kategori-kutu-grid a:hover {
+    background: #590e0e;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+
+
+@media(max-width: 900px) {
+    .kategori-kutu-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width: 550px) {
+
+    .kategori-kutu-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .hero {
+        height: 250px;
+    }
+
+    .hero-icerik h1 {
+        font-size: 28px;
+    }
+}
+
+.yayinevi {
+    background: linear-gradient(rgba(148, 20, 20, 0.4), #590e0e),
+                url("../img/anasayfa-bg.jpg");
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: 3px solid #3a0707;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.yayinevi h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-style: italic;
+    margin-left: -900px;
+    text-shadow: 0 2px 5px rgba( 0, 0, 0, 0.3);
+}
+
+.yayinevi p {
+    font-size: 16px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-style: italic;
+    margin-left: -600px;
+}
+
+.yayinevi h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.yayinevi img {
+    width: 180px;
+    height: 200px;
+    margin-left: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba( 0, 0, 0, 0.3);
+}
+
+.yayinevi img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+@media (max-width: 600px) {
+
+ .yayinevi {
+    text-align: center;
+    padding: 20px;
+   }  
+
+ .yayinevi h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-left: -400px;
+ }
+
+  .yayinevi p {
+    font-size: 16px;
+    margin-left: -150px;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+ .yayinevi {
+    text-align: center;
+    padding: 20px;
+   }  
+
+ .yayinevi h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-left: -200px;
+ }
+
+  .yayinevi p {
+    font-size: 16px;
+    margin-left: 100px;
+  }
+
+  .yayinevi img {
+    margin-left: 300px;
+  }
+
+}
+
+.koleksiyonlar {
+    padding: 50px 80px;
+    background: #f9f4e7;
+}
+
+.koleksiyonlar h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 26px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #590e0e;
+}
+
+.koleksiyon-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.koleksiyon-kart {
+    background: #fff;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.koleksiyon-kart:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
+}
+
+.koleksiyon-kart h3 {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 15px;
+    color: #590e0e;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.koleksiyon-kart img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.koleksiyon-img-galeri {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.koleksiyon-img-galeri img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
