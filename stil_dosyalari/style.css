@@ -322,6 +322,29 @@ button {
     }
 }
 
+@media (max-width:768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+    .arama-kutu-navbar {
+        width: 100%;
+        justify-content: center;
+    }
+    .arama-kutu-navbar input {
+        width: 70%;
+    }
+    .navbar-links {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    .nav-right {
+        margin-top: 10px;
+    }
+}
+
 @media (max-width: 600px) {
     .navbar {
         flex-direction: column;
@@ -566,7 +589,8 @@ display: block;
         font-size: 12px;
     }
     .cok-satanlar-grid {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
     .cok-satan-kart img {
         height: 180px;
@@ -634,6 +658,14 @@ display: block;
     .hero p {
         font-size: 16px;
         margin-top: 5px;
+    }
+    .kategori-kutu {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 12px;
+    }
+    .kategori-kutu a {
+        font-size: 15px;
+        padding: 12px;
     }
 }
 
@@ -741,6 +773,21 @@ display: block;
     margin: 0 auto;
   }
 
+}
+
+@media (max-width:768px) {
+    .yayinevi{
+        padding: 20px 10px;
+        text-align: center;
+    }
+    .yayinevi img {
+        width: 120px;
+        height: auto;
+        margin-top: 15px;
+    }
+    .yayinevi h2{
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 900px) {
